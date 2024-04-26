@@ -95,3 +95,4 @@ readme.md.tpl
 app/
 /settings.json
 build-readme.js
+dist

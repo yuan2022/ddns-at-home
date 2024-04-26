@@ -5,6 +5,11 @@
 
 ## 新版本亮点
 
+### 1.2.1
+
+- 优化代码逻辑
+- 优化打包逻辑（现在采用ncc打包所有依赖到一个文件中，运行时可以直接复制打包后的dist文件到任何安装有nodejs16+环境直接运行pm2 start即可，不用继续npm install安装相关依赖）
+
 ### 1.2.0
 
 - 优化代码
@@ -234,6 +239,10 @@ $ pm2 startup
 | eslint | ![eslint](https://img.shields.io/static/v1?label=eslint&message=8.15.0&color=important&style=flat-square) |
 | markdown-table | ![markdown-table](https://img.shields.io/static/v1?label=markdown-table&message=3.0.2&color=important&style=flat-square) |
 | typescript | ![typescript](https://img.shields.io/static/v1?label=typescript&message=4.6.4&color=important&style=flat-square) |
+| @vercel/ncc | ![@vercel/ncc](https://img.shields.io/static/v1?label=@vercel/ncc&message=0.38.1&color=important&style=flat-square) |
+| cpx2 | ![cpx2](https://img.shields.io/static/v1?label=cpx2&message=7.0.1&color=important&style=flat-square) |
+| rimraf | ![rimraf](https://img.shields.io/static/v1?label=rimraf&message=5.0.5&color=important&style=flat-square) |
+| ts-node | ![ts-node](https://img.shields.io/static/v1?label=ts-node&message=10.9.2&color=important&style=flat-square) |
 
 ## 开源协议
 

@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DDNSSetting } from "./interface";
 import { validateSetting } from "./services/settings-validate";
@@ -18,7 +18,9 @@ export function setting(): Setting {
     let settingObj: DDNSSetting;
 
     try {
-
+        if(!existsSync(settingPath)){
+            throw Error(`配置文件不存在，请检查，路径：${settingPath}`);
+        }
         settingObj = JSON.parse(readFileSync(settingPath, 'utf-8')) as DDNSSetting;
 
     } catch (error) {
